@@ -4,6 +4,7 @@ import TopPagesWidget from './TopPagesWidget'
 import TrendWidget from './TrendWidget'
 import TopDevicesWidget from './TopDevicesWidget'
 import TopSourcesWidget from './TopSourcesWidget'
+import TopSearchWidget from './TopSearchWidget'
 import TopLocationsWidget from './TopLocationsWidget'
 import BrowsersWidget from './BrowsersWidget'
 
@@ -12,6 +13,7 @@ const widgets = [
   TopPagesWidget,
   TopLocationsWidget,
   TopSourcesWidget,
+  TopSearchWidget,
   TopDevicesWidget,
   BrowsersWidget,
 ]
@@ -25,6 +27,7 @@ export default function Widgets() {
       </div>
       <div className="col-start-1 col-span-2 lg:col-span-1 grid grid-cols-1 gap-5 sm:gap-10 grid-rows-3-auto">
         <TrendWidget />
+        <TopSearchWidget />
         <TopPagesWidget />
         <TopLocationsWidget />
       </div>
